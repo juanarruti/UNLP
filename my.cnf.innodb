@@ -1,0 +1,26 @@
+[mysql]
+user=root
+password=Welcome2018*
+
+[mysqld_safe]
+malloc-lib=/usr/lib64/libjemalloc.so.1
+
+[mysqld]
+
+datadir=/var/lib/mysql
+socket=/var/lib/mysql/mysql.sock
+
+symbolic-links=0
+
+log-error=/var/log/mysqld.log
+pid-file=/var/run/mysqld/mysqld.pid
+
+secure-file-priv=''
+
+# Configuraion InnoDB
+innodb_buffer_pool_size=20737418240 
+innodb_log_file_size=536870912
+innodb_log_buffer_size=67108864
+innodb_flush_log_at_trx_commit=0
+sync_binlog=0
+innodb_doublewrite=0
