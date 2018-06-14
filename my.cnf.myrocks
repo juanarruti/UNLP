@@ -20,7 +20,7 @@ secure-file-priv=''
 # Configuracion MyRocks
 collation-server=latin1_bin
 transaction-isolation=READ-COMMITTED
-ocksdb_max_open_files=-1
+rocksdb_max_open_files=-1
 rocksdb_max_background_jobs=8
 rocksdb_max_total_wal_size=4G
 rocksdb_block_size=16384
