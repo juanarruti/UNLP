@@ -1,3 +1,3 @@
-LOAD DATA INFILE '/root/bulk_load.csv' INTO TABLE test.bulk_load
+LOAD DATA INFILE '/tmp/bulk_load.csv' INTO TABLE test.bulk_load
 FIELDS TERMINATED BY ','  OPTIONALLY ENCLOSED BY '"'
 LINES TERMINATED BY '\n' ;
