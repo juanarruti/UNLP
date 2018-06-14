@@ -1,0 +1,25 @@
+[mysql]
+user=root
+password=Welcome2018*
+
+[mysqld_safe]
+malloc-lib=/usr/lib64/libjemalloc.so.1
+
+[mysqld]
+
+datadir=/var/lib/mysql
+socket=/var/lib/mysql/mysql.sock
+
+symbolic-links=0
+
+log-error=/var/log/mysqld.log
+pid-file=/var/run/mysqld/mysqld.pid
+
+secure-file-priv=''
+
+# Configuracion TokuDB
+tokudb_cache_size = 20G
+
+sync_binlog=0
+binlog_row_image=minimal
+max_binlog_size=536870912
