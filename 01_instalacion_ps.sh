@@ -18,6 +18,7 @@ yum -y install Percona-Server-tokudb-57
 
 # Setear IO scheduler a noop
 echo "deadline">/sys/block/xvda/queue/scheduler
+echo "deadline">/sys/block/xvdb/queue/scheduler
 
 # Deshabilitar transparent hugepage para TokuDB
 echo never > /sys/kernel/mm/transparent_hugepage/enabled
