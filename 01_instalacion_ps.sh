@@ -1,9 +1,16 @@
 #!/bin/bash
 
-# Instalacion MySQL 5.7 - Engine MyRocks, TokuDB - SO Red Hat 7
-
 sudo su -
 setenforce 0
+
+# Mount del FS
+
+mkfs -t ext4 /dev/xvdb
+mkdir /var/lib/mysql
+mount /dev/xvdb /var/lib/mysql
+
+# Instalacion MySQL 5.7 - Engine MyRocks, TokuDB - SO Red Hat 7
+
 yum -y install http://www.percona.com/downloads/percona-release/redhat/0.1-4/percona-release-0.1-4.noarch.rpm
 yum -y install Percona-Server-server-57
 yum -y install Percona-Server-rocksdb-57

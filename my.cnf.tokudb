@@ -18,6 +18,7 @@ pid-file=/var/run/mysqld/mysqld.pid
 secure-file-priv=''
 
 # Configuracion TokuDB
+default_storage_engine=tokudb
 tokudb_cache_size = 20G
 
 sync_binlog=0

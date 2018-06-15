@@ -18,6 +18,7 @@ pid-file=/var/run/mysqld/mysqld.pid
 secure-file-priv=''
 
 # Configuracion MyRocks
+default_storage_engine=myrocks
 collation-server=latin1_bin
 transaction-isolation=READ-COMMITTED
 rocksdb_max_open_files=-1
