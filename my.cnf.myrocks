@@ -27,6 +27,7 @@ rocksdb_max_total_wal_size=4G
 rocksdb_block_size=16384
 rocksdb_block_cache_size=20G
 rocksdb_table_cache_numshardbits=6
+rocksdb-flush-log-at-trx-commit=0
 
 rocksdb_bytes_per_sync=4194304
 rocksdb_wal_bytes_per_sync=4194304
@@ -41,3 +42,5 @@ rocksdb_default_cf_options=write_buffer_size=128m;target_file_size_base=32m;max_
 sync_binlog=0
 binlog_row_image=minimal
 max_binlog_size=536870912
+
+default-storage-engine=ROCKSDB

@@ -20,6 +20,8 @@ secure-file-priv=''
 # Configuracion TokuDB
 default_storage_engine=tokudb
 tokudb_cache_size = 20G
+tokudb_commit_sync = 0
+tokudb_fsync_log_period = 0
 
 sync_binlog=0
 binlog_row_image=minimal
