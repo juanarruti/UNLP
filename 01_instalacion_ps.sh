@@ -1,6 +1,5 @@
 #!/bin/bash
 
-sudo su -
 setenforce 0
 
 # Mount del FS
