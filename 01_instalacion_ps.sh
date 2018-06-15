@@ -29,6 +29,9 @@ yum -y install wget
 wget https://raw.githubusercontent.com/juanarruti/UNLP/master/my.cnf.1
 mv -f ./my.cnf.1 /etc/my.cnf
 
+# Limpiamos el directorio
+rm -Rf /var/lib/mysql/*
+
 # Iniciar la base de datos
 service mysql start
 
